@@ -53,25 +53,6 @@ Alternatively, you can use Docker Compose:
 docker-compose up --build
 ```
 
-## Docker Compose
-
-A `docker-compose.yml` file is included for ease of deployment. It builds the Docker image and runs the container, mounting the necessary configuration file and setting environment variables.
-
-## .gitignore
-
-A `.gitignore` file is provided to ensure that sensitive files such as `.env` and system-specific files are not tracked by Git.
-
 ## Contributing
 
 Contributions to this project are welcome. Please ensure that any pull requests are well-documented and include relevant updates to the README if necessary.
-
-## License
-
-This project is open-sourced under the MIT License. See the LICENSE file for more information.
-```
-
-Remember to replace `your_zone_identifier` and `your_api_token` with your actual Cloudflare zone identifier and API token in the `.env` file.
-
----
-
-This README provides a comprehensive guide to the application, including its purpose, setup instructions, and usage details, ensuring that users can quickly get started with managing their Cloudflare DNS records.
