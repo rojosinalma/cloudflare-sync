@@ -1,0 +1,11 @@
+records:
+  - type: A
+    name: example.com
+    content: 123.123.123.123
+    ttl: 1800
+    proxied: true
+  - type: CNAME
+    name: www
+    content: example.com
+    ttl: 1800
+    proxied: false

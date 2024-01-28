@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    environment:
+      - CLOUDFLARE_ZONE_IDENTIFIER=${CLOUDFLARE_ZONE_IDENTIFIER}
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+    volumes:
+      - ./dns_records.yaml:/usr/src/app/dns_records.yaml
