@@ -44,7 +44,7 @@ docker build -t cloudflare-dns-manager .
 Then, run the container:
 
 ```bash
-docker run -v $(pwd)/dns_records.yml:/usr/src/app/dns_records.yml --env-file .env cloudflare-dns-manager
+docker run -v $(pwd)/dns_records.yml:/app/dns_records.yml --env-file .env cloudflare-dns-manager
 ```
 
 Alternatively, you can use Docker Compose:
