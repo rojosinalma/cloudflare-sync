@@ -1,7 +1,10 @@
 version: '3.8'
 services:
-  app:
+  cloudflare-sync:
     build: .
+    container_name: cloudflare-sync
+    ports:
+      - 4567:4567
     environment:
       - CLOUDFLARE_ZONE_IDENTIFIER=${CLOUDFLARE_ZONE_IDENTIFIER}
       - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN}

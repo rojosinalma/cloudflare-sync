@@ -32,13 +32,13 @@ The application is designed to be simple and easy to use. It allows you to defin
 To run the application locally, execute:
 
 ```bash
-ruby cloudflare-sync/app.rb
+ruby cloudflare-sync/update_dns.rb
 ```
 
 To run the application using Docker, first build the image:
 
 ```bash
-docker build -t cloudflare-dns-manager .
+docker build -t cloudflare-sync .
 ```
 
 Then, run the container:
